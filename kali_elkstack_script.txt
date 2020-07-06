@@ -1,7 +1,5 @@
 sudo apt-get update
 sudo apt-get upgrade -y
-#extras
-sudo apt-get install kali-linux-top10 kali-linux-forensic gedit -y
 #remove old
 sudo apt autoremove -y
 ## ELK
