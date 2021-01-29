@@ -52,4 +52,7 @@ sudo cp ELK_local_config/logstash.yml /etc/logstash/
 
 #status of elk
 sudo systemctl status elasticsearch kibana logstash
-© 2021 GitHub, Inc.
+
+#Firewall open
+sudo firewall-cmd --zone=public --add-port=9200/tcp
+sudo firewall-cmd --zone=public --add-port=5601/tcp
