@@ -2,3 +2,19 @@ server.port: 5601
 server.host: "0.0.0.0"
 server.name: "kibana-1"
 elasticsearch.hosts: ["http://localhost:9200"]
+elasticsearch.username: "kibana_system"
+#elasticsearch.password: "<Fill In Here>"
+logging:
+  appenders:
+    type: file
+    filename: /var/log/kibana/kibana.log
+    layout:
+      type: json
+  root:
+    appenders: 
+      - default
+      - file
+pid.file: /run/kibana/kibana.pid
+#xpack.encryptedSavedObjects.encryptionkey: <fill Here>
+#xpack.reporting.encryptionKey: <Fill Here>
+#xpack.security.encryptionkey: <Fill Here>
