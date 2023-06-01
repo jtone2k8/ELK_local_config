@@ -12,8 +12,8 @@ rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch
 #Create elasticsearch.repo @ /etc/yum.repos.d/
 sudo touch /etc/yum.repos.d/elasticsearch.repo
 echo "[elasticsearch]" | sudo tee /etc/yum.repos.d/elasticsearch.repo
-echo "name=Elasticsearch repository for 7.x packages" | sudo tee -a /etc/yum.repos.d/elasticsearch.repo
-echo "baseurl=https://artifacts.elastic.co/packages/7.x/yum" | sudo tee -a /etc/yum.repos.d/elasticsearch.repo
+echo "name=Elasticsearch repository for 8.x packages" | sudo tee -a /etc/yum.repos.d/elasticsearch.repo
+echo "baseurl=https://artifacts.elastic.co/packages/8.x/yum" | sudo tee -a /etc/yum.repos.d/elasticsearch.repo
 echo "gpgcheck=1" | sudo tee -a /etc/yum.repos.d/elasticsearch.repo
 echo "gpgkey=https://artifacts.elastic.co/GPG-KEY-elasticsearch" | sudo tee -a /etc/yum.repos.d/elasticsearch.repo
 echo "enabled=0" | sudo tee -a /etc/yum.repos.d/elasticsearch.repo
