@@ -1,9 +1,7 @@
 node.name: node-1
 path.data: /var/lib/elasticsearch
 path.logs: /var/log/elasticsearch
-network.host: 127.0.0.1
+network.host: 0.0.0.0
 http.port: 9200
-discovery.seed_hosts: ["127.0.0.1"]
-cluster.initial_master_nodes: ["127.0.0.1"]
-node.master: true
-node.data: true
+xpack.security.enabled: true
+discovery.type: single-node
