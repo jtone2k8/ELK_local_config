@@ -7,7 +7,7 @@ sudo apt autoremove -y
 # install public key
 wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -
 #install repo
-echo "deb https://artifacts.elastic.co/packages/7.x/apt stable main" | sudo tee -a /etc/apt/sources.list.d/elastic-7.x.list
+echo "deb https://artifacts.elastic.co/packages/8.x/apt stable main" | sudo tee -a /etc/apt/sources.list.d/elastic-8.x.list
 #install apps
 sudo apt-get update && sudo apt-get install elasticsearch kibana logstash -y
 #pull ELK configs
